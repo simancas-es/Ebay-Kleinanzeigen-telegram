@@ -9,7 +9,7 @@ How to use it
 4-Set the minimum and maximum time before making a new request
 
 Examples:
-python "observer-kleinanzeigen.py" -tf token.txt -uf url.txt -mins 10 -maxs 20
+python "observer-kleinanzeigen.py" -tf token.txt -uf url.txt -mins 300 -maxs 600 
 
 -t : token as text
 -tf : name of the file with the token
@@ -18,6 +18,6 @@ python "observer-kleinanzeigen.py" -tf token.txt -uf url.txt -mins 10 -maxs 20
 
 -mins : minimum time before a new request
 -maxs : maximum time before new request
-The request will be done with a random number between these two limits
+The request will be done with a random number between these two limits, in seconds
 
 To start write /start
