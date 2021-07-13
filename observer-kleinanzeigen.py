@@ -33,8 +33,8 @@ class Article:
         self.anuncioid=anuncioid
         
 def updateList(url):
-        user_agent = {'User-agent': 'Mozilla/5.0'}    
-    qq = requests.get(url,headers = user_agent)
+    user_agent = {'User-agent': 'Mozilla/5.0'}    
+    qq = requests.get(url, headers = user_agent)
     text = qq.text
     soup = BeautifulSoup(text)
     #print(soup.prettify())
