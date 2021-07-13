@@ -151,7 +151,6 @@ def main():
     dispatcher.add_handler(CommandHandler("start", start))
     dispatcher.add_handler(CommandHandler("help", help_command))
     dispatcher.add_handler(CommandHandler("url", add_url))
-    dispatcher.add_handler(CommandHandler("listurl", changefreq))
     dispatcher.add_handler(CommandHandler("testdelete", testdelete))
    
     dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, msgnormal))
